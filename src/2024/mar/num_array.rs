@@ -2,6 +2,14 @@ struct NumArray {
     s: Vec<i32>
 }
 
+/**
+ * 303. Range Sum Query - Immutable
+ * Prefix Sum Solution:
+ * Calculate the prefix sum of each position in the 
+ * initiate method. The sum between left and right 
+ * is prefix sum of position right+1 minus 
+ * prefix sum of position left.
+ */
 impl NumArray {
 
     fn new(nums: Vec<i32>) -> Self {
